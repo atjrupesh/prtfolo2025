@@ -1,0 +1,290 @@
+/* General Styling */
+body {
+  font-family: "GilroyMedium", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Themes */
+body.day-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.night-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: inherit; /* Inherit dynamic background color */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit; /* Dynamic text color */
+  font-size: 18px;
+  transition: color 0.3s; /* Smooth transition for theme change */
+}
+
+.navbar a:hover {
+  color: #ffcc00; /* Highlight on hover */
+}
+
+/* Full Page Sections */
+.full-page-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column; /* Ensures content is stacked vertically */
+  background-color: inherit; /* Dynamic background */
+  color: inherit; /* Dynamic text color */
+}
+
+/* Section Headings and Text */
+.full-page-section h2 {
+  font-size: 32px;
+  margin-bottom: 15px; /* Space between heading and content */
+}
+
+.full-page-section p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Full screen height */
+}
+
+.home-section h1 {
+  font-size: 50px;
+  font-family: "GilroySemiBold", sans-serif;
+  color: inherit; /* Dynamic text color */
+  margin: 0;
+}
+
+/* Contact Me Section */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full page height */
+  text-align: center;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#contact ul li {
+  margin: 10px 0;
+}
+
+#contact a {
+  text-decoration: none;
+  color: inherit; /* Dynamic text color */
+  font-size: 20px;
+}
+
+#contact a:hover {
+  color: #ffcc00;
+}
+
+/* Dropdowns */
+.contact-section li {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  color: #ffcc00;
+}
+
+.dropdown-text {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* Mail Me Section */
+.mail-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.mail-me-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.mail-me-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.mail-link {
+  color: #ffcc00;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.mail-link:hover {
+  color: #fff;
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffcc00;
+  transition: color 0.3s;
+}
+
+.theme-btn:hover {
+  color: #ffffff;
+}
+
+/* Skills Section Styles */
+#skills {
+  background-color: inherit; /* Inherit from the body */
+  color: inherit; /* Inherit from the body */
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 2px solid #ffcc00;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+#skills h2 {
+  font-size: 36px;
+  font-family: "GilroySemiBold", sans-serif;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#skills p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Skill List */
+#skills ul {
+  list-style: none;
+  padding: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#skills li {
+  font-size: 22px;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: rgba(20, 20, 20, 0.8); /* Default dark background */
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#skills li:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 204, 0, 0.1);
+}
+
+#skills li ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#skills li ul li {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* Day Theme */
+body.day-theme #skills {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text */
+}
+
+body.day-theme #skills h2 {
+  color: #ffcc00; /* Keep yellow for headings */
+}
+
+body.day-theme #skills li {
+  background-color: rgba(
+    240,
+    240,
+    240,
+    0.8
+  ); /* Light background for list items */
+}
+
+/* Night Theme */
+body.night-theme #skills {
+  background-color: #141414; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+body.night-theme #skills h2 {
+  color: #ffcc00; /* Keep yellow for headings */
+}
+
+body.night-theme #skills li {
+  background-color: rgba(20, 20, 20, 0.8); /* Dark background for list items */
+}
+
+/* Animation for Skills */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
